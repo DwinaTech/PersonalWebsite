@@ -8,7 +8,7 @@ body{
    background-size: cover;
   position: relative;
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Audiowide', cursive;
   font-size: 18px;
 }
 
@@ -17,7 +17,8 @@ body{
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .7);
-   padding: 10px 0px!important;
+   padding: 15px 0px 0px 0px!important;
+   margin-top: 0px!important;
 }
 /*=====================================*/
 /*============= Start Header =========*/
@@ -25,10 +26,10 @@ body{
 .navbar-inverse{
   min-height: 65px;
   border-radius: 0;
-  font-size: 20px;
   border-bottom: 3px solid #cc0000;
   margin-bottom: 0px !important;
   background: #000;
+  font-size: 16px;
 }
 
 .navbar-brand{
@@ -59,92 +60,79 @@ body{
   color: #ddd
 }
 
-.menu{
-   max-width: 60%;
-   font-size: 20px;
-  top: 0;
-  left: 10;
-   list-style: none;
-   color: #fff;
-   position: absolute;
-  padding: 15px 0px 0px 15px;  
+/*=================== Second nav =====================*/
+nav{
+  min-height: 60px;
+  margin-bottom: 0px !important;
+  background: #545b66;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+nav .bran h1{
+  margin: 0;
+  position: relative;
+  padding-top: 17px;
+}
+nav ul{
+  list-style: none;
 }
 
-.menu > a{
+h1, h2, .bran, .navbar-brand{
+  font-family: 'Baloo', cursive;
+}
+
+nav .menu-icon{
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  padding: 13px;
   text-decoration: none;
   color: #fff;
-  margin-top: 10px;
-  font-size: 25px
+  font-size: 25px;
+  background: #000;
 }
 
-.menu .submenu{
-  padding: 5px 50px 10px 10px;
-  box-shadow: 6px 5px 5px #888888;
+nav .sub{
   position: absolute;
-  background: #008080 !important;
-  top: 50px;
-  left:0px;
+  width: 100%;
+  padding-top: 8px;
   display: none;
-  border-radius: 0px 0px 10px 10px;
-  z-index: 1000;
+  top: 50px;
+  right: 15px;
+  bottom: 0;
+  height: 100%;
+  z-index: 900000;
 }
-.menu li{
-  margin: 10px 0px 0px 5px;
-  border-bottom: 2px solid #cc0000;
+.menu:hover .sub{
+  display: block;
+}
+nav .sub li{
+  padding: 20px 0px 30px 10px;
+  border: 1px solid #414449;
+  margin: 0;
+  background: #000;
   position: relative;
+}
+.sub li:hover{
+  background: #545b66;
+}
+nav .sub li a{
+  text-decoration: none;
+  padding: 10px 0px 15px 10px;
+  color: #fff;
   display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
 }
-
-
-.menu li a{
-   text-decoration: none;
-   color: #000000;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-
-.menu .active{
-   color: #ffffff;
-}
-.menu .active:hover,
-.submenu a:hover{
-   color: #ffffff;
-  font-weight: bold;
-}
-
-.menu:hover > .submenu{
-  display: block;
-}
-
-
-/*=====================================*/
-/*============= Start Wilcoming =========*/
-/*===================================*/
-.welcoming{
-   min-height: 250px;
-   max-width: 100%;
-   margin-bottom: 20px;
-  
-}
-
-.welcoming h2{
-   padding-top: 70px
-}
-
-.welcoming span{
-  color: #cc0000;
-}
-
-.welcoming span:hover{
-  color: #0ff;
-}
-
-.welcoming p{
-   padding: 20px;
-}
-
-.btn-info{
-   font-size: 18px !important
+.sub li a:hover{
+  color: #6ff700;
 }
 
 /*=====================================*/
@@ -358,7 +346,7 @@ body{
 /*============= Start Comments =========*/
 /*===================================*/
 .comments{
-	
+
   padding-bottom: 40px;
   min-height: 600px;
   margin-top: 22px;
@@ -444,6 +432,49 @@ body{
   color: #fff;
 }
 /*=====================================*/
+/*============= Start About =========*/
+/*===================================*/
+.about{
+  overflow: hidden;
+  max-width: 100%;
+  height: 660px;
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  border-top: 3px solid #cc0000;
+}
+
+.about img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    z-index: 0;
+}
+
+h1, h2, .brand{
+  font-family: 'Baloo', cursive;
+}
+
+.about p{
+  padding: 0px 710px 0px 0px;
+}
+
+.about .overlay{
+    background: rgba(244, 245, 247,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+}
+
+/*=====================================*/
 /*============= Start Footer =========*/
 /*===================================*/
 footer{
@@ -457,47 +488,42 @@ footer{
 .btn:hover{
   background: #cc0000;
   color: #000;
-  border: 1px solid #cc0000; 
+  border: 1px solid #cc0000;
 }
 /*=====================================*/
 /*============= Start @Media =========*/
 /*===================================*/
-@media(max-width: 591px){  
+@media(max-width: 591px){
   .main-logo{
     display: none;
   }
  .services .box img{
    margin-top: 50px;
 }
-  
+
 .services .box{
  width: 100%;
-}  
+}
 
  .services .box .btn:not(.last-btn){
     margin-bottom: 40px;
-  }  
- 
+  }
+
  .services .box i{
   padding: 20px
-} 
+}
 
 .btn-info{
    font-size: 12px !important;
   }
- 
- 
-.navbar-brand{
-  font-size: 20px; 
-} 
- 
+
  .services h2 span{
 
   display: block !important;
    border-bottom: none;
    font-size: 25px
   }
-  
+
  .comments aside{
   display: none;
 }
@@ -505,13 +531,9 @@ footer{
   font-size: 20px;
 }
 
-.navbar-brand{
-  float: right;
-}  
-  
  .navbar-inverse{
   position: relative !important;
-}  
+}
 
 .move i{
   position: fixed;
@@ -521,18 +543,25 @@ footer{
   bottom: 0;
   z-index: 8;
   font-size: 40px;
-}  
+}
 .move a{
   color: #cc0000;
 }
 .comments form{
   margin: 5px;
-} 
+}
 .comments form .btn{
   padding: 7px 15px
 }
 .welcoming h2{
    padding-top: 40px
+}
+.bran h1{
+  font-size: 25px;
+  padding-top: 15px;
+}
+.about p{
+  padding: 20px;
 }
 }
 
@@ -540,18 +569,18 @@ footer{
   .main-logo .media .social-media{
    display: none;
 }
-  
+
 .main-logo .media .subscrib{
   position: static;
   float: right;
   margin-top: 15px;
 }
-  
+
  .main-logo .media .subscrib input{
   padding: 11px 0px 11px 30px;
   border-radius: 10px;
 }
-  
+
   .main-logo{
     margin-top: 10px;
   }
@@ -559,27 +588,23 @@ footer{
 .services .box{
  width: 100%;
 }
-  
+
   .services .box .btn:not(.last-btn){
     margin-bottom: 40px;
   }
- 
+
   .main-logo{
     margin-top: 90px
   }
- 
+
    .comments aside{
   display: none;
-  
+
 }
-  
- .navbar-brand{
-  float: right;
-} 
-  
+
 .navbar-inverse{
   position: relative !important;
-}  
+}
 .mov{
   position: fixed;
   top: 150px;
@@ -588,25 +613,36 @@ footer{
   bottom: 0;
   z-index: 8;
   font-size: 40px;
-}  
+}
 .mov{
   color: #cc0000;
 }
 .comments form{
   margin: 5px;
 }
-  
+.bran h1{
+  font-size: 25px;
+  padding-top: 15px;
 }
-  
+	
+.about p{
+  padding: 0px 50px 0px 0px;
+}
+	
+}
+
 @media(min-width: 768px) and (max-width: 991px){
   .nav{
   width: 52%;
 }
-  
+.bran h1{
+  font-size: 25px;
+  padding-top: 15px;
+}
 .navbar-header{
   width: 48%;
 }
-  
+
 .main-logo .media .social-media{
    float: right;
    font-size: 25px;
@@ -661,34 +697,42 @@ footer{
   }
   .main-logo{
     margin-top: 90px
-  } 
-  
+  }
+.about p{
+  padding: 0px 50px 0px 0px;
+}
+	
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
     .nav{
   width: 40%;
 }
-  
+
 .navbar-header{
   width: 60%;
 }
  .main-logo .media .social-media{
    margin-left: 15px;
 }
- 
+
  .main-logo{
     margin-top: 70px
   }
 }
 
 @media(min-width: 1200px){
-  
+
  .main-logo .media .social-media{
    margin-left: 35px;
-}  
+}
 
   .main-logo{
     margin-top: 30px
   }
+}
+
+/*       */
+.container{
+	position: relative !important;
 }
