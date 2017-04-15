@@ -134,7 +134,28 @@ nav .sub li a{
 .sub li a:hover{
   color: #6ff700;
 }
+/*=====================================*/
+/*============= Start welcoming =========*/
+/*===================================*/
+.welcoming{
+	padding: 10px;
+}
 
+.welcoming h2{
+	padding-top: 15px;
+}
+
+.welcoming h2 span{
+	color: #cc0000;
+}
+
+.welcoming h2 span:hover{
+	color: #00ffff;
+}
+
+.welcoming p{
+	padding: 20px 40px;
+}
 /*=====================================*/
 /*============= Start Main-logo =========*/
 /*===================================*/
@@ -348,13 +369,13 @@ nav .sub li a{
 .comments{
 
   padding-bottom: 40px;
-  min-height: 600px;
+  min-height: 660px;
   margin-top: 22px;
 }
 
 .comments >h1{
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 20px 0px 20px 10px;
   font-size: 30px;
   background: rgba(0, 0, 0, 1);
   min-height: 60px;
@@ -380,7 +401,7 @@ nav .sub li a{
 }
 .comments form textarea{
   margin-bottom: 10px;
-  padding: 5px 0px 120px 10px;
+  padding: 5px 0px 170px 10px;
   background: transparent;
   border: 1px solid #cc0000;
   color: #fff;
