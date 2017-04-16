@@ -364,27 +364,28 @@ nav .sub li a{
 }
 
 /*=====================================*/
-/*============= Start Comments =========*/
+/*============= Start Contact =========*/
 /*===================================*/
-.comments{
+.contact{
 
   padding-bottom: 40px;
   min-height: 660px;
   margin-top: 22px;
 }
 
-.comments >h1{
+.contact >h1{
   margin-bottom: 30px;
   padding: 20px 0px 20px 10px;
   font-size: 30px;
-  background: rgba(0, 0, 0, 1);
+  background: #417a32;
   min-height: 60px;
+  border: 3px solid #375e2d;
 }
 .input-feild{
   margin-bottom: 10px;
 }
 
-.comments form{
+.contact form{
   margin-left: 5px;
 }
 
@@ -399,39 +400,39 @@ nav .sub li a{
     height: 45px;
     border-radius: 15px;
 }
-.comments form textarea{
+.contact form textarea{
   margin-bottom: 10px;
   padding: 5px 0px 170px 10px;
   background: transparent;
   border: 1px solid #cc0000;
   color: #fff;
 }
-.comments form .btn{
+.contact form .btn{
   padding: 10px 30px
 }
 /*=====================================*/
 /*============= Start Aside =========*/
 /*===================================*/
-.comments aside{
+.contact aside{
   background: #ddd;
   margin-bottom: 15px;
 }
 
-.comments aside h2{
+.contact aside h2{
   background: #000;
   padding: 10px;
   margin:0;
 }
 
-.comments aside ol{
+.contact aside ol{
   background: #0ff;
 }
 
-.comments aside ol li{
+.contact aside ol li{
   padding: 8px
 }
 
-.comments aside ol li a{
+.contact aside ol li a{
   text-decoration: none;
   color: #000;
 }
@@ -549,10 +550,10 @@ footer{
    font-size: 25px
   }
 
- .comments aside{
+ .contact aside{
   display: none;
 }
-.comments h1{
+.contact h1{
   font-size: 20px;
 }
 
@@ -572,10 +573,10 @@ footer{
 .move a{
   color: #cc0000;
 }
-.comments form{
+.contact form{
   margin: 5px;
 }
-.comments form .btn{
+.contact form .btn{
   padding: 7px 15px
 }
 .welcoming h2{
@@ -588,7 +589,12 @@ footer{
 .about p{
   padding: 20px;
 }
-
+.about{
+  background: rgba(244, 245, 247,0.1);
+}
+.about img{
+  display: none;
+}
 }
 
 @media(min-width: 592px) and (max-width:767px){
@@ -623,7 +629,7 @@ footer{
     margin-top: 90px
   }
 
-   .comments aside{
+   .contact aside{
   display: none;
 
 }
@@ -643,7 +649,7 @@ footer{
 .mov{
   color: #cc0000;
 }
-.comments form{
+.contact form{
   margin: 5px;
 }
 .bran h1{
