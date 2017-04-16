@@ -588,7 +588,7 @@ footer{
 .about p{
   padding: 20px;
 }
-	
+
 }
 
 @media(min-width: 592px) and (max-width:767px){
@@ -650,7 +650,7 @@ footer{
   font-size: 25px;
   padding-top: 15px;
 }
-	
+
 .about p{
   padding: 0px 50px 0px 0px;
 }
@@ -727,11 +727,11 @@ footer{
 .about p{
   padding: 0px 50px 0px 0px;
 }
-	
+
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
-    .nav{
+.nav{
   width: 40%;
 }
 
@@ -739,12 +739,13 @@ footer{
   width: 60%;
 }
  .main-logo .media .social-media{
-   margin-left: 15px;
+   margin-left: 3px;
 }
 
  .main-logo{
     margin-top: 70px
   }
+
 }
 
 @media(min-width: 1200px){
@@ -757,4 +758,3 @@ footer{
     margin-top: 30px
   }
 }
-
