@@ -511,6 +511,10 @@ footer{
   color: #000;
   border: 1px solid #cc0000;
 }
+/*======================= My Frame Work =======================*/
+.container{
+	position: relative !important;
+}
 /*=====================================*/
 /*============= Start @Media =========*/
 /*===================================*/
@@ -584,6 +588,7 @@ footer{
 .about p{
   padding: 20px;
 }
+	
 }
 
 @media(min-width: 592px) and (max-width:767px){
@@ -649,7 +654,7 @@ footer{
 .about p{
   padding: 0px 50px 0px 0px;
 }
-	
+
 }
 
 @media(min-width: 768px) and (max-width: 991px){
@@ -753,7 +758,3 @@ footer{
   }
 }
 
-/*       */
-.container{
-	position: relative !important;
-}
