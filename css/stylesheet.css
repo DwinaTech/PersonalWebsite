@@ -23,38 +23,62 @@ body{
 /*=====================================*/
 /*============= Start Header =========*/
 /*===================================*/
-.navbar-inverse{
+.navba{
   min-height: 65px;
-  border-radius: 0;
   border-bottom: 3px solid #cc0000;
   margin-bottom: 0px !important;
   background: #000;
   font-size: 16px;
 }
 
-.navbar-brand{
-  margin-top: 5px;
+.navba-brand{
   font-size: 30px;
   color: #0ff !important;
+
+}
+.navba-header{
+  width: 55%;
+}
+.navba-header > a{
+  text-decoration: none;
+  padding-top: 10px;
+  display: block;
 }
 
-.navbar-brand:hover{
+.navba-brand:hover{
   color: #cc0000 !important;
 }
 
-.navbar-inverse .navbar-nav :not(:first-child){
-  padding: 7px !important;
-}.navbar-inverse .navbar-nav li:last-of-type{
-  padding-right: 0px !important;
-  margin-left: 0px !important;
+.navba .links{
+  list-style: none;
+  width: 45%;
+  margin-top: 20px;
 }
 
-.navbar-inverse .navbar-nav a:last-of-type{
-  padding-right: 0px !important;
-  margin-left: 0px !important;
+.navba .links li{
+  display: inline;
 }
 
-.navbar-inverse .navbar-nav .active>a{
+.navba .links li a{
+  text-decoration: none;
+  text-decoration: none;
+  background: #cc0000 transparent;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.navba .links li a:hover{
+  background: #cc0000;
+  color: #fff;
+}
+
+.links .active{
+  background: #cc0000;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+.navba .navbar-nav .active>a{
   padding: 22px 15px !important;
   background: #cc0000 !important;
   color: #ddd
@@ -79,7 +103,7 @@ nav ul{
   list-style: none;
 }
 
-h1, h2, .bran, .navbar-brand{
+h1, h2, .bran, .navba-brand{
   font-family: 'Baloo', cursive;
 }
 
@@ -554,9 +578,6 @@ footer{
   font-size: 20px;
 }
 
- .navbar-inverse{
-  position: relative !important;
-}
 
 .move i{
   position: fixed;
@@ -631,9 +652,6 @@ footer{
 
 }
 
-.navbar-inverse{
-  position: relative !important;
-}
 .mov{
   position: fixed;
   top: 150px;
@@ -661,25 +679,9 @@ footer{
 }
 
 @media(min-width: 768px) and (max-width: 991px){
-  .nav{
-  width: 52%;
-}
 .bran h1{
   font-size: 25px;
   padding-top: 15px;
-}
-.navbar-header{
-  width: 48%;
-}
-
-.main-logo .media .social-media{
-   float: right;
-   font-size: 25px;
-   margin-left: 30px;
-   background: #000;
-  padding: 16px;
-  border-radius: 50%;
-  margin-top: 3px;
 }
 
 .main-logo .media .subscrib{
@@ -689,36 +691,6 @@ footer{
 .main-logo .media .subscrib input{
   padding: 11px 10px;
   border-radius: 10px;
-}
-
-.main-logo .media .face,
-.main-logo .media .face>a{
- background: #3c589e;
-  color: #fff;
-  text-decoration: none;
-  padding-left: 13px;
-  padding-right: 13px;
-}
-
-.main-logo .media .yout,
-.main-logo .media .yout>a{
- background: #d72523;
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-logo .media .twit,
-.main-logo .media .twit>a{
- background: #32cdfd;
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-logo .media .goog,
-.main-logo .media .goog>a{
- background: #d41616;
-  color: #fceee1;
-  text-decoration: none;
 }
 
  .main-logo{
@@ -734,21 +706,15 @@ footer{
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
-.nav{
-  width: 40%;
-}
-
-.navbar-header{
-  width: 60%;
-}
  .main-logo .media .social-media{
    margin-left: 3px;
 }
-
  .main-logo{
     margin-top: 70px
   }
-
+  .main-logo .media .subscrib {
+      left: 60px;
+  }
 }
 
 @media(min-width: 1200px){
@@ -756,8 +722,10 @@ footer{
  .main-logo .media .social-media{
    margin-left: 35px;
 }
-
   .main-logo{
     margin-top: 30px
   }
+  .navba .links {
+    width: 37%;
+}
 }
