@@ -87,16 +87,20 @@ body{
 nav{
   min-height: 60px;
   margin-bottom: 0px !important;
-  background: #545b66;
+  background: #000;
   width: 100%;
   font-size: 20px;
   text-transform: uppercase;
   position: relative;
+  border-bottom: 3px solid #cc0000;
 }
-nav .bran h1{
+nav .bran a{
   margin: 0;
-  position: relative;
-  padding-top: 17px;
+  padding-top: 10px;
+  display: block;
+  position: absolute;
+  top: 0;
+  text-decoration: none;
 }
 nav ul{
   list-style: none;
@@ -114,7 +118,7 @@ nav .menu-icon{
   text-decoration: none;
   color: #fff;
   font-size: 25px;
-  background: #000;
+  background: #cc0000;
 }
 
 nav .sub{
@@ -122,7 +126,7 @@ nav .sub{
   width: 100%;
   padding-top: 8px;
   display: none;
-  top: 50px;
+  top: 52px;
   right: 15px;
   bottom: 0;
   height: 100%;
@@ -155,7 +159,14 @@ nav .sub li a{
   width: 100%;
 }
 .menu .active{
-  background: #cc0000;
+  	background: #cc0000;
+	border: none;
+	border: 3px solid #cc0000;
+}
+.menu .active:hover{
+    background: #cc0000;
+	border: 3px solid #cc0000;
+	color: #fff;
 }
 .sub li a:hover{
   color: #6ff700;
