@@ -84,7 +84,7 @@ body{
 }
 
 /*=================== Second nav =====================*/
-nav{
+.navb{
   min-height: 60px;
   margin-bottom: 0px !important;
   background: #000;
@@ -94,7 +94,7 @@ nav{
   position: relative;
   border-bottom: 3px solid #cc0000;
 }
-nav .bran a{
+.navb .bran a{
   margin: 0;
   padding-top: 10px;
   display: block;
@@ -102,7 +102,7 @@ nav .bran a{
   top: 0;
   text-decoration: none;
 }
-nav ul{
+.navb ul{
   list-style: none;
 }
 
@@ -110,7 +110,7 @@ h1, h2, .bran, .navba-brand{
   font-family: 'Baloo', cursive;
 }
 
-nav .menu-icon{
+.navb .menu-icon{
   position: absolute;
   right: 15px;
   top: 0px;
@@ -121,7 +121,7 @@ nav .menu-icon{
   background: #cc0000;
 }
 
-nav .sub{
+.navb .sub{
   position: absolute;
   width: 100%;
   padding-top: 8px;
@@ -135,7 +135,7 @@ nav .sub{
 .menu:hover .sub{
   display: block;
 }
-nav .sub li{
+.navb .sub li{
   padding: 20px 0px 30px 10px;
   border: 1px solid #414449;
   margin: 0;
@@ -145,7 +145,7 @@ nav .sub li{
 .sub li:hover{
   background: #545b66;
 }
-nav .sub li a{
+.navb .sub li a{
   text-decoration: none;
   padding: 10px 0px 15px 10px;
   color: #fff;
@@ -158,18 +158,23 @@ nav .sub li a{
   height: 100%;
   width: 100%;
 }
-.menu .active{
+.navb .menu .active{
   	background: #cc0000;
 	border: none;
 	border: 3px solid #cc0000;
 }
-.menu .active:hover{
+.navb .menu .active:hover{
     background: #cc0000;
 	border: 3px solid #cc0000;
 	color: #fff;
 }
 .sub li a:hover{
   color: #6ff700;
+}
+.container{
+	position: relative !important;
+	padding-left: 5;
+	padding-right: 5;
 }
 /*=====================================*/
 /*============= Start welcoming =========*/
