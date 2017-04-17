@@ -84,7 +84,7 @@ body{
 }
 
 /*=================== Second nav =====================*/
-.navb{
+nav{
   min-height: 60px;
   margin-bottom: 0px !important;
   background: #000;
@@ -94,7 +94,7 @@ body{
   position: relative;
   border-bottom: 3px solid #cc0000;
 }
-.navb .bran a{
+nav .bran a{
   margin: 0;
   padding-top: 10px;
   display: block;
@@ -102,7 +102,7 @@ body{
   top: 0;
   text-decoration: none;
 }
-.navb ul{
+nav ul{
   list-style: none;
 }
 
@@ -110,7 +110,7 @@ h1, h2, .bran, .navba-brand{
   font-family: 'Baloo', cursive;
 }
 
-.navb .menu-icon{
+nav .menu-icon{
   position: absolute;
   right: 15px;
   top: 0px;
@@ -121,7 +121,7 @@ h1, h2, .bran, .navba-brand{
   background: #cc0000;
 }
 
-.navb .sub{
+nav .sub{
   position: absolute;
   width: 100%;
   padding-top: 8px;
@@ -135,7 +135,7 @@ h1, h2, .bran, .navba-brand{
 .menu:hover .sub{
   display: block;
 }
-.navb .sub li{
+nav .sub li{
   padding: 20px 0px 30px 10px;
   border: 1px solid #414449;
   margin: 0;
@@ -145,7 +145,7 @@ h1, h2, .bran, .navba-brand{
 .sub li:hover{
   background: #545b66;
 }
-.navb .sub li a{
+nav .sub li a{
   text-decoration: none;
   padding: 10px 0px 15px 10px;
   color: #fff;
@@ -158,12 +158,12 @@ h1, h2, .bran, .navba-brand{
   height: 100%;
   width: 100%;
 }
-.navb .menu .active{
+nav .menu .active{
   	background: #cc0000;
 	border: none;
 	border: 3px solid #cc0000;
 }
-.navb .menu .active:hover{
+nav .menu .active:hover{
     background: #cc0000;
 	border: 3px solid #cc0000;
 	color: #fff;
