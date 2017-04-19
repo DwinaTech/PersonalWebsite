@@ -27,7 +27,7 @@
 
 	});
 	//==============================================//
-// ============ Hide palceholder ============== //
+// ========== Hide Input palceholder =========== //
 //=============================================//
 var myInput = document.querySelectorAll("input");
 var i;
@@ -47,5 +47,26 @@ myInput[i].onblur = function(){
   // Empty data-place
     this.setAttribute('data-place', '');
 };
+}
+//==============================================//
+// ======== Hide Textarea palceholder ========== //
+//=============================================//
+	var myTextArea = document.querySelectorAll("textarea");
+	var i;
+	for(i=0; i <= myTextArea.length; i++){
+		myTextArea[i].onfocus = function(){
+		'use strict';
+		// store Textarea placeholder Attribute in Backup Attribute
+			this.setAttribute('data-place', this.getAttribute('placeholder') );
+		// Empty Placeholder
+			this.setAttribute('placeholder', '');
+	};
 
+	myTextArea[i].onblur = function(){
+		'use strict';
+		// Get placeholder Attribute from data-place Attribute
+			this.setAttribute('placeholder', this.getAttribute('data-place') );
+		// Empty data-place
+			this.setAttribute('data-place', '');
+	};
 }
