@@ -11,14 +11,8 @@ body{
   font-family: 'Audiowide', cursive;
   font-size: 18px;
 }
-
-.overlay{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .7);
-   padding: 15px 0px 0px 0px!important;
-   margin-top: 0px!important;
+.body-wall{
+  background-color: #1d1616;
 }
 /*=====================================*/
 /*============= Start Header =========*/
@@ -26,14 +20,14 @@ body{
 .navba{
   min-height: 65px;
   border-bottom: 3px solid #cc0000;
-  margin-bottom: 0px !important;
+  margin-bottom: 0;
   background: #000;
   font-size: 16px;
 }
 
 .navba-brand{
   font-size: 30px;
-  color: #0ff !important;
+  color: #0ff;
 
 }
 .navba-header{
@@ -46,7 +40,7 @@ body{
 }
 
 .navba-brand:hover{
-  color: #cc0000 !important;
+  color: #cc0000 ;
 }
 
 .navba .links{
@@ -78,15 +72,15 @@ body{
 }
 
 .navba .navbar-nav .active>a{
-  padding: 22px 15px !important;
-  background: #cc0000 !important;
-  color: #ddd
+  padding: 22px 15px ;
+  background: #cc0000;
+  color: #ddd;
 }
 
 /*=================== Second nav =====================*/
 nav{
   min-height: 60px;
-  margin-bottom: 0px !important;
+  margin-bottom: 0;
   background: #000;
   width: 100%;
   font-size: 20px;
@@ -113,7 +107,7 @@ h1, h2, .bran, .navba-brand{
 nav .menu-icon{
   position: absolute;
   right: 15px;
-  top: 0px;
+  top: 0;
   padding: 13px;
   text-decoration: none;
   color: #fff;
@@ -390,7 +384,7 @@ nav .menu .active:hover{
 }
 
 .services .box h3{
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .services .box p{
@@ -412,9 +406,18 @@ nav .menu .active:hover{
   margin-top: 22px;
 }
 
+.overlay{
+  position: absolute;
+  background: rgba(255, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .contact >h1{
   margin-bottom: 30px;
-  padding: 20px 0px 20px 10px;
+  padding: 20px 0 20px 10px;
   font-size: 30px;
   background: #417a32;
   min-height: 60px;
@@ -531,7 +534,7 @@ h1, h2, .brand{
     height: 100%;
     top: 0;
     left: 0;
-    right: 0px;
+    right: 0;
     bottom: 0;
 }
 
@@ -553,7 +556,7 @@ footer{
 }
 /*======================= My Frame Work =======================*/
 .container{
-	position: relative !important;
+	position: relative;
 }
 /*=====================================*/
 /*============= Start @Media =========*/
@@ -579,12 +582,12 @@ footer{
 }
 
 .btn-info{
-   font-size: 12px !important;
+   font-size: 12px;
   }
 
  .services h2 span{
 
-  display: block !important;
+  display: block ;
    border-bottom: none;
    font-size: 25px
   }
@@ -645,7 +648,7 @@ footer{
 }
 
  .main-logo .media .subscrib input{
-  padding: 11px 0px 11px 30px;
+  padding: 11px 0 11px 30px;
   border-radius: 10px;
 }
 
@@ -718,7 +721,7 @@ footer{
     margin-top: 90px
   }
 .about p{
-  padding: 0px 50px 0px 0px;
+  padding: 0 50px 0 0;
 }
 
 }
