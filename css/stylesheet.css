@@ -5,7 +5,7 @@ body{
   background: url('http://res.cloudinary.com/durykvdaf/image/upload/v1490642323/bodybackground_v1k2iv.jpg')no-repeat;
   -webkit-background-size: cover;
    -moz-background-size: cover;
-   background-size: cover;
+  background-size: cover;
   position: relative;
   color: #fff;
   font-family: 'Audiowide', cursive;
@@ -13,6 +13,13 @@ body{
 }
 .body-wall{
   background-color: #1d1616;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
 }
 /*=====================================*/
 /*============= Start Header =========*/
@@ -178,7 +185,7 @@ nav .menu .active:hover{
 }
 
 .welcoming h2{
-	padding-top: 15px;
+	padding-top: 40px;
 }
 
 .welcoming h2 span{
@@ -404,15 +411,6 @@ nav .menu .active:hover{
   padding-bottom: 40px;
   min-height: 660px;
   margin-top: 22px;
-}
-
-.overlay{
-  position: absolute;
-  background: rgba(255, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .contact >h1{
