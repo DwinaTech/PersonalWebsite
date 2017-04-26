@@ -197,7 +197,7 @@ nav .menu .active:hover{
 }
 
 .welcoming p{
-	padding: 20px 40px;
+	padding: 20px 50px;
 }
 /*=====================================*/
 /*============= Start Main-logo =========*/
@@ -259,8 +259,7 @@ nav .menu .active:hover{
   padding: 12px;
 }
 
-
-.main-logo .media .face >a {
+.media .face >a {
   background: #3c589e;
     color: #fff;
     text-decoration: none;
@@ -269,14 +268,14 @@ nav .menu .active:hover{
     border-radius: 50%;
 }
 
-.main-logo .media .face>a:hover{
+.media .face>a:hover{
  background: #fff;
   color: #3c589e;
   border: 2px solid #3c589e;
 }
 
 
-.main-logo .media .yout > a{
+.media .yout > a{
     background: #d72523;
     color: #fff;
     text-decoration: none;
@@ -285,13 +284,13 @@ nav .menu .active:hover{
     border-radius: 50%;
 }
 
-.main-logo .media .yout>a:hover{
+.media .yout>a:hover{
  background: #fff;
   color: #d72523;
   border: 2px solid #d72523;
 }
 
-.main-logo .media .twit>a{
+.media .twit>a{
   background: #32cdfd;
   color: #fff;
   text-decoration: none;
@@ -300,13 +299,13 @@ nav .menu .active:hover{
   border-radius: 50%;
 }
 
-.main-logo .media .twit>a:hover{
+.media .twit>a:hover{
  background: #fff;
   color: #32cdfd;
   border: 2px solid #32cdfd;
 }
 
-.main-logo .media .goog>a{
+.media .goog>a{
   background: #d41616;
   border: 2px solid #d41616;
   color: #fff;
@@ -315,12 +314,24 @@ nav .menu .active:hover{
   border-radius: 50%;
 }
 
-.main-logo .media .goog>a:hover{
+.media .goog>a:hover{
  background: #fceee1;
   color:  #d41616;
   border: 2px solid #d41616;
 }
 
+.about-media{
+    position: absolute;
+    right: -110px;
+    top: 150px;
+    width: 200px;
+    height: 800px;
+    font-size: 25px;
+}
+
+.about-media .social-media{
+  padding-top: 45px;
+}
 /*=====================================*/
 /*============= Start Our Services =========*/
 /*===================================*/
