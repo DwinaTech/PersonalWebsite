@@ -347,6 +347,11 @@ nav .menu .active:hover{
   border-bottom: 3px solid #cc0000;
 }
 
+.services h2 span:hover{
+  color: #0ff;
+  border-bottom: none;;
+}
+
 .services .box{
  width: 33.3333%;
  float: left;
@@ -401,6 +406,10 @@ nav .menu .active:hover{
 
 .services .box h3 span{
   color: #cc0000;
+}
+
+.services .box h3 span:hover{
+  color: #0ff;
 }
 
 /*=====================================*/
