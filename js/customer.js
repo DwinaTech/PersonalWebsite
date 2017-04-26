@@ -56,9 +56,9 @@ myInput[i].onblur = function(){
 	for(i=0; i <= myTextArea.length; i++){
 		myTextArea[i].onfocus = function(){
 		'use strict';
-		// store Textarea placeholder Attribute in Backup Attribute
+		// store Textarea placeholder Attribute in data-place Attribute
 			this.setAttribute('data-place', this.getAttribute('placeholder') );
-		// Empty Placeholder
+		// Empty Placeholder Attribute
 			this.setAttribute('placeholder', '');
 	};
 
@@ -66,7 +66,7 @@ myInput[i].onblur = function(){
 		'use strict';
 		// Get placeholder Attribute from data-place Attribute
 			this.setAttribute('placeholder', this.getAttribute('data-place') );
-		// Empty data-place
+		// Empty data-place Attribute
 			this.setAttribute('data-place', '');
 	};
 }
