@@ -115,7 +115,7 @@ nav .menu-icon{
   position: absolute;
   right: 15px;
   top: 0;
-  padding: 13px;
+  padding: 12px;
   text-decoration: none;
   color: #fff;
   font-size: 25px;
@@ -183,12 +183,11 @@ nav .menu .active:hover{
 .welcoming{
 	padding: 10px;
 }
-
 .welcoming h2{
 	padding-top: 40px;
 }
 
-.welcoming h2 span{
+h2 span{
 	color: #cc0000;
 }
 
@@ -197,7 +196,7 @@ nav .menu .active:hover{
 }
 
 .welcoming p{
-	padding: 20px 50px;
+	padding: 20px 350px;
 }
 /*=====================================*/
 /*============= Start Main-logo =========*/
@@ -319,16 +318,6 @@ nav .menu .active:hover{
   color:  #d41616;
   border: 2px solid #d41616;
 }
-
-.about-media{
-    position: absolute;
-    right: -110px;
-    top: 150px;
-    width: 200px;
-    height: 800px;
-    font-size: 25px;
-}
-
 .about-media .social-media{
   padding-top: 45px;
 }
@@ -519,13 +508,27 @@ nav .menu .active:hover{
 .about{
   overflow: hidden;
   max-width: 100%;
-  height: 660px;
   position: relative;
   color: #000;
   font-weight: bold;
   border-top: 3px solid #cc0000;
 }
-
+.about-welcoming p {
+    padding: 20px 80px;
+    text-align: left;
+}
+.about-content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about-media{
+    position: absolute;
+    right: -110px;
+    top: 150px;
+    width: 200px;
+    height: 600px;
+    font-size: 25px;
+}
 .about img{
     position: absolute;
     width: 100%;
@@ -536,15 +539,9 @@ nav .menu .active:hover{
     bottom: 0;
     z-index: 0;
 }
-
 h1, h2, .brand{
   font-family: 'Baloo', cursive;
 }
-
-.about p{
-  padding: 0px 710px 0px 0px;
-}
-
 .about .overlay{
     background: rgba(244, 245, 247,0.4);
     position: absolute;
@@ -580,6 +577,18 @@ footer{
 /*============= Start @Media =========*/
 /*===================================*/
 @media(max-width: 591px){
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  nav .bran a{
+    padding-left: 10px;
+  }
+  .welcoming p {
+    padding: 20px 31px;
+  }
   .main-logo{
     display: none;
   }
@@ -602,22 +611,17 @@ footer{
 .btn-info{
    font-size: 12px;
   }
-
  .services h2 span{
-
   display: block ;
    border-bottom: none;
    font-size: 25px
   }
-
  .contact aside{
   display: none;
 }
 .contact h1{
   font-size: 20px;
 }
-
-
 .move i{
   position: fixed;
   top: 150px;
@@ -636,8 +640,18 @@ footer{
 .contact form .btn{
   padding: 7px 15px
 }
+.contact {
+    min-height: 530px;
+}
 .welcoming h2{
-   padding-top: 40px
+   padding-top: 20px
+}
+.about{
+  height: 540px;
+}
+.about-welcoming p {
+    padding: 10px;
+    text-align: inherit;
 }
 .bran h1{
   font-size: 25px;
@@ -653,12 +667,25 @@ footer{
   display: none;
 }
 }
-
+/*=====================================*/
+/*============= 592 => 767px =========*/
+/*===================================*/
 @media(min-width: 592px) and (max-width:767px){
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+  nav .bran a{
+    padding-left: 10px;
+}
   .main-logo .media .social-media{
    display: none;
 }
-
+.welcoming p {
+    padding: 20px 135px;
+}
 .main-logo .media .subscrib{
   position: static;
   float: right;
@@ -668,6 +695,7 @@ footer{
  .main-logo .media .subscrib input{
   padding: 11px 0 11px 30px;
   border-radius: 10px;
+  text-align: center;
 }
 
   .main-logo{
@@ -716,13 +744,17 @@ footer{
 }
 
 }
-
+/*=====================================*/
+/*============= 768 => 991px =========*/
+/*===================================*/
 @media(min-width: 768px) and (max-width: 991px){
 .bran h1{
   font-size: 25px;
   padding-top: 15px;
 }
-
+.welcoming p {
+    padding: 20px 235px;
+}
 .main-logo .media .subscrib{
    display: none;
 }
@@ -743,8 +775,13 @@ footer{
 }
 
 }
-
+/*=====================================*/
+/*============= 992 => 1199px =========*/
+/*===================================*/
 @media(min-width: 992px) and (max-width: 1199px){
+  .welcoming p{
+  	padding: 20px 225px;
+}
  .main-logo .media .social-media{
    margin-left: 3px;
 }
@@ -755,7 +792,9 @@ footer{
       left: 60px;
   }
 }
-
+/*=====================================*/
+/*============= 1200px =>  =========*/
+/*===================================*/
 @media(min-width: 1200px){
 
  .main-logo .media .social-media{
