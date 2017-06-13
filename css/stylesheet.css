@@ -35,7 +35,7 @@ body{
 .navba-brand{
   font-size: 30px;
   color: #0ff;
-
+  padding-left: 10px;
 }
 .navba-header{
   width: 55%;
@@ -86,7 +86,7 @@ body{
 
 /*=================== Second nav =====================*/
 nav{
-  min-height: 60px;
+  min-height: 65px;
   margin-bottom: 0;
   background: #000;
   width: 100%;
@@ -113,12 +113,12 @@ h1, h2, .bran, .navba-brand{
 
 nav .menu-icon{
   position: absolute;
-  right: 15px;
+  right: 0;
   top: 0;
-  padding: 12px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   background: #cc0000;
 }
 
@@ -128,10 +128,11 @@ nav .sub{
   padding-top: 8px;
   display: none;
   top: 52px;
-  right: 15px;
+  right: 0;
   bottom: 0;
   height: 100%;
   z-index: 900000;
+  padding-left: 0px !important;
 }
 .menu:hover .sub{
   display: block;
@@ -586,6 +587,9 @@ footer{
   nav .bran a{
     padding-left: 10px;
   }
+  nav .sub{
+    padding-left: 0px !important;
+  }
   .welcoming p {
     padding: 20px 31px;
   }
@@ -748,6 +752,13 @@ footer{
 /*============= 768 => 991px =========*/
 /*===================================*/
 @media(min-width: 768px) and (max-width: 991px){
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
 .bran h1{
   font-size: 25px;
   padding-top: 15px;
