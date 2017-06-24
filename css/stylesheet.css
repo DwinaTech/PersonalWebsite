@@ -2,9 +2,10 @@
 /*============= Start Global =========*/
 /*===================================*/
 body{
-  background: url('http://res.cloudinary.com/durykvdaf/image/upload/v1490642323/bodybackground_v1k2iv.jpg')no-repeat;
+  background: url('../images/contentBackground.png'), no-repeat;
   -webkit-background-size: cover;
-   -moz-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position: relative;
   color: #fff;
@@ -12,7 +13,8 @@ body{
   font-size: 18px;
 }
 .body-wall{
-  background-color: #1d1616;
+  /*background-color: #1d1616;*/
+  background: rgba(244, 245, 247,0.1);
 }
 
 .overlay{
@@ -21,161 +23,65 @@ body{
   left: 0;
   right: 0;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 /*=====================================*/
 /*============= Start Header =========*/
 /*===================================*/
-.navba{
+nav{
   min-height: 65px;
   border-bottom: 3px solid #cc0000;
   margin-bottom: 0;
   background: #000;
   font-size: 16px;
+  width: 100%;
 }
 
-.navba-brand{
+nav .navba-brand{
   font-size: 30px;
   color: #0ff;
-
-}
-.navba-header{
+  padding-left: 10px;
+  display: block;
   width: 55%;
-}
-.navba-header > a{
+  float: left;
   text-decoration: none;
   padding-top: 10px;
-  display: block;
 }
 
-.navba-brand:hover{
+nav .navba-brand:hover{
   color: #cc0000 ;
 }
-
-.navba .links{
+nav .sub{
   list-style: none;
   width: 45%;
   margin-top: 20px;
+  float: right;
 }
 
-.navba .links li{
+nav .sub li{
   display: inline;
 }
 
-.navba .links li a{
+nav .sub li a{
   text-decoration: none;
   background: #cc0000 transparent;
   padding: 20px 10px;
   color: #fff;
 }
 
-.navba .links li a:hover{
+nav .sub li a:hover{
   background: #cc0000;
-  color: #fff;
-}
-
-.links .active{
-  background: #cc0000;
-  color: #fff;
-  padding: 20px 10px;
-}
-
-.navba .navbar-nav .active>a{
-  padding: 22px 15px ;
-  background: #cc0000;
-  color: #ddd;
-}
-
-/*=================== Second nav =====================*/
-nav{
-  min-height: 60px;
-  margin-bottom: 0;
-  background: #000;
-  width: 100%;
-  font-size: 20px;
-  text-transform: uppercase;
-  position: relative;
-  border-bottom: 3px solid #cc0000;
-}
-nav .bran a{
-  margin: 0;
-  padding-top: 10px;
-  display: block;
-  position: absolute;
-  top: 0;
-  text-decoration: none;
-}
-nav ul{
-  list-style: none;
-}
-
-h1, h2, .bran, .navba-brand{
-  font-family: 'Baloo', cursive;
-}
-
-nav .menu-icon{
-  position: absolute;
-  right: 15px;
-  top: 0;
-  padding: 12px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
-  background: #cc0000;
-}
-
-nav .sub{
-  position: absolute;
-  width: 100%;
-  padding-top: 8px;
-  display: none;
-  top: 52px;
-  right: 15px;
-  bottom: 0;
-  height: 100%;
-  z-index: 900000;
-}
-.menu:hover .sub{
-  display: block;
-}
-nav .sub li{
-  padding: 20px 0px 30px 10px;
-  border: 1px solid #414449;
-  margin: 0;
-  background: #000;
-  position: relative;
-}
-.sub li:hover{
-  background: #545b66;
-}
-nav .sub li a{
-  text-decoration: none;
-  padding: 10px 0px 15px 10px;
-  color: #fff;
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-}
-nav .menu .active{
-  	background: #cc0000;
-	border: none;
-	border: 3px solid #cc0000;
-}
-nav .menu .active:hover{
-    background: #cc0000;
-	border: 3px solid #cc0000;
-	color: #fff;
-}
-.sub li a:hover{
   color: #6ff700;
 }
-.container{
-	position: relative !important;
-	padding-left: 5;
-	padding-right: 5;
+ .sub .active{
+  background: #cc0000;
+  color: #fff;
+  padding: 20px 0;
+}
+h1, h2, .bran, .navba-brand{
+  font-family: 'Baloo', cursive;
 }
 /*=====================================*/
 /*============= Start welcoming =========*/
@@ -512,6 +418,10 @@ h2 span{
   color: #000;
   font-weight: bold;
   border-top: 3px solid #cc0000;
+  height: 650px;
+}
+.pra-button{
+  padding: 15px;
 }
 .about-welcoming p {
     padding: 20px 80px;
@@ -520,6 +430,9 @@ h2 span{
 .about-content{
   padding-left: 10px;
   padding-right: 10px;
+}
+.about-content .header{
+  padding-left: 15px;
 }
 .about-media{
     position: absolute;
@@ -552,7 +465,51 @@ h1, h2, .brand{
     right: 0;
     bottom: 0;
 }
-
+/*=====================================*/
+/*======= Start registration =========*/
+/*===================================*/
+.register{
+  background: rgba(244, 245, 247,0.2);
+  padding: 10px 0 50px 0;
+  width: 45%;
+  margin: 30px auto 30px auto;
+  border-radius: 10px;
+}
+.register .header{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.register form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.register form input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 5px;
+    border: 1px solid #cc0000;
+    color: #000;
+}
+.register form button{
+  background: #cc0000;
+    margin-top: 10px;
+    border: 2px solid #cc0000;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.register form a:last-child{
+  text-decoration: none;
+  color: #00ffff;
+  margin-left: 45px;
+}
+/*=====================================*/
+/*============ Start Sign in =========*/
+/*===================================*/
+.signIn{
+    width: 35%;
+    margin: 100px auto 125px auto;
+}
 /*=====================================*/
 /*============= Start Footer =========*/
 /*===================================*/
@@ -583,9 +540,86 @@ footer{
     margin-right: 0;
     margin-left: 0;
   }
-  nav .bran a{
-    padding-left: 10px;
-  }
+/*********************************/
+/********* Start Dropmenu********/
+/*******************************/
+nav{
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+nav .navba-brand{
+  position: absolute;
+  top: 0;
+}
+nav .menu-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  background: #cc0000;
+}
+
+nav .sub{
+  position: absolute;
+  width: 100%;
+  padding-top: 8px;
+  margin-top: 0;
+  float: none;
+  display: none;
+  top: 52px;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 900000;
+  padding-left: 0px !important;
+  text-align: center;
+}
+.menu:hover .sub{
+  display: block;
+}
+nav .sub li{
+  padding: 25px 0;
+  border: 1px solid #414449;
+  background: #000;
+  position: relative;
+  display: block;
+}
+.sub li:hover{
+  background: #545b66;
+}
+nav .sub li a{
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+nav .sub .active{
+  background: #cc0000;
+	border: none;
+	border: 3px solid #cc0000;
+  padding: 25px 0;
+}
+    
+nav .sub .active:hover{
+  background: #cc0000;
+	border: 3px solid #cc0000;
+}
+.container{
+	position: relative !important;
+	padding-left: 5;
+	padding-right: 5;
+}
+/*========= End Drop===========*/
   .welcoming p {
     padding: 20px 31px;
   }
@@ -666,6 +700,16 @@ footer{
 .about img{
   display: none;
 }
+/*======= Registration form =======*/
+.register{
+  width: 80%;
+}
+.signIn{
+  width: 67%;
+}
+.register form input {
+    font-size: 14px;
+}
 }
 /*=====================================*/
 /*============= 592 => 767px =========*/
@@ -677,9 +721,86 @@ footer{
     margin-right: 0;
     margin-left: 0;
 }
-  nav .bran a{
-    padding-left: 10px;
+/*********************************/
+/********* Start Dropmenu********/
+/*******************************/
+nav{
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
 }
+nav .navba-brand{
+  position: absolute;
+  top: 0;
+}
+nav .menu-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  background: #cc0000;
+}
+
+nav .sub{
+  position: absolute;
+  width: 100%;
+  padding-top: 8px;
+  margin-top: 0;
+  float: none;
+  display: none;
+  top: 52px;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 900000;
+  padding-left: 0px !important;
+  text-align: center;
+}
+.menu:hover .sub{
+  display: block;
+}
+nav .sub li{
+  padding: 25px 0;
+  border: 1px solid #414449;
+  background: #000;
+  position: relative;
+  display: block;
+}
+.sub li:hover{
+  background: #545b66;
+}
+nav .sub li a{
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+nav .sub .active{
+  background: #cc0000;
+	border: none;
+	border: 3px solid #cc0000;
+  padding: 25px 0;
+}
+    
+nav .sub .active:hover{
+  background: #cc0000;
+	border: 3px solid #cc0000;
+}
+.container{
+	position: relative !important;
+	padding-left: 5;
+	padding-right: 5;
+}
+/*========= End Drop===========*/
   .main-logo .media .social-media{
    display: none;
 }
@@ -742,16 +863,105 @@ footer{
 .about p{
   padding: 0px 50px 0px 0px;
 }
-
+/*======= Registration form =======*/
+.register{
+  width: 60%;
+}
+.signIn{
+  width: 52%;
+}
 }
 /*=====================================*/
 /*============= 768 => 991px =========*/
 /*===================================*/
 @media(min-width: 768px) and (max-width: 991px){
-.bran h1{
-  font-size: 25px;
-  padding-top: 15px;
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
+/*********************************/
+/********* Start Dropmenu********/
+/*******************************/
+nav{
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+nav .navba-brand{
+  position: absolute;
+  top: 0;
+}
+nav .menu-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  background: #cc0000;
+}
+
+nav .sub{
+  position: absolute;
+  width: 100%;
+  padding-top: 8px;
+  margin-top: 0;
+  float: none;
+  display: none;
+  top: 52px;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 900000;
+  padding-left: 0px !important;
+  text-align: center;
+}
+.menu:hover .sub{
+  display: block;
+}
+nav .sub li{
+  padding: 25px 0;
+  border: 1px solid #414449;
+  background: #000;
+  position: relative;
+  display: block;
+}
+.sub li:hover{
+  background: #545b66;
+}
+nav .sub li a{
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+nav .sub .active{
+  background: #cc0000;
+	border: none;
+	border: 3px solid #cc0000;
+  padding: 25px 0;
+}
+    
+nav .sub .active:hover{
+  background: #cc0000;
+	border: 3px solid #cc0000;
+}
+.container{
+	position: relative !important;
+	padding-left: 5;
+	padding-right: 5;
+}
+/*========= End Drop===========*/
 .welcoming p {
     padding: 20px 235px;
 }
@@ -773,7 +983,14 @@ footer{
 .about p{
   padding: 0 50px 0 0;
 }
-
+/*======= Registration form =======*/
+.register{
+  width: 50%;
+}
+/*======= Registration form =======*/
+.signIn{
+  width: 40%;
+}
 }
 /*=====================================*/
 /*============= 992 => 1199px =========*/
