@@ -94,11 +94,11 @@ h1, h2, .bran, .navba-brand{
 }
 
 h2 span{
-	color: #cc0000;
+	color: #00ffff;
 }
 
 .welcoming h2 span:hover{
-	color: #00ffff;
+	color: #cc0000;
 }
 
 .welcoming p{
@@ -238,14 +238,9 @@ h2 span{
 }
 
 .services h2{
-  margin: 5px 0 0 0;
   font-size: 40px;
-  padding-left: 10px;
-  margin-bottom: 60px;
-  border-bottom: 4px dotted #A9A9A9;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  border-top: 4px dotted #A9A9A9;
+
+  margin: 40px 0;
 }
 
 .services h2 span{
@@ -381,6 +376,7 @@ h2 span{
 
 .contact aside ol{
   background: #0ff;
+  padding-left: 26px;
 }
 
 .contact aside ol li{
@@ -392,40 +388,18 @@ h2 span{
   color: #000;
 }
 /*=====================================*/
-/*============= Start Move-top =========*/
-/*===================================*/
-.move i{
-  position: fixed;
-  top: 150px;
-  left: 20;
-  right: 30px;
-  bottom: 0;
-  z-index: 8;
-  font-size: 80px;
-}
-
-.move a{
-  text-decoration: none;
-  color: #fff;
-}
-/*=====================================*/
 /*============= Start About =========*/
 /*===================================*/
 .about{
-  overflow: hidden;
   max-width: 100%;
   position: relative;
   color: #000;
   font-weight: bold;
-  border-top: 3px solid #cc0000;
-  height: 650px;
+  height: 750px;
+  overflow: hidden;
 }
 .pra-button{
   padding: 15px;
-}
-.about-welcoming p {
-    padding: 20px 80px;
-    text-align: left;
 }
 .about-content{
   padding-left: 10px;
@@ -436,11 +410,11 @@ h2 span{
 }
 .about-media{
     position: absolute;
-    right: -110px;
+    right: 0;
     top: 150px;
-    width: 200px;
     height: 600px;
     font-size: 25px;
+    padding-right: 10px;
 }
 .about img{
     position: absolute;
@@ -451,9 +425,6 @@ h2 span{
     right: 0px;
     bottom: 0;
     z-index: 0;
-}
-h1, h2, .brand{
-  font-family: 'Baloo', cursive;
 }
 .about .overlay{
     background: rgba(244, 245, 247,0.4);
@@ -490,10 +461,10 @@ h1, h2, .brand{
     padding: 2px 5px;
     border: 1px solid #cc0000;
     color: #000;
+    margin-bottom: 15px;
 }
 .register form button{
   background: #cc0000;
-    margin-top: 10px;
     border: 2px solid #cc0000;
     border-radius: 5px;
     padding: 3px 5px;
