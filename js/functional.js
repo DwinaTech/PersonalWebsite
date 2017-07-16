@@ -60,4 +60,121 @@ window.addEventListener('load', function (event) {
 		}
 	});
 });
+/*==============================================//
+// ========== Start Form Validation ========== //
+//=============================================*/
+window.addEventListener('load', function () {
+	const firstName = document.forms[0].firstName;
+firstName.addEventListener('keyup', function (params) {
+	const track = params.target.value;
+	const errorBox = params.target.nextElementSibling;
+	if (track.length < 6 || track === "") {
+		errorBox.innerHTML = "&cross; empty or shorter than 6 letters";
+		errorBox.style.color = "red";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	} else {
+		errorBox.innerHTML = "&check;";
+		errorBox.style.color = "green";
+		firstName.style.borderColor = "green"
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	}
+})
 
+const lastName = document.forms[0].lastName;
+lastName.addEventListener('keyup', function (params) {
+	const track = params.target.value;
+	const errorBox = params.target.nextElementSibling;
+	if (track.length < 6 || track === "") {
+		errorBox.innerHTML = "&cross; empty or shorter than 6 letters";
+		errorBox.style.color = "red";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	} else {
+		errorBox.innerHTML = "&check;";
+		errorBox.style.color = "green";
+		lastName.style.borderColor = "green"
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	}
+})
+
+const email = document.forms[0].email;
+email.addEventListener('keyup', function (params) {
+	const track = params.target.value;
+	const errorBox = params.target.nextElementSibling;
+	if (track.length < 6 || track.indexOf('@') === -1 || track.indexOf('.') === -1 || track.indexOf('@') === 0 || track.indexOf('@') > track.indexOf('.') || track.indexOf('.') === track.length || track.indexOf('.') >= (track.length-2)) {
+		errorBox.innerHTML = "&cross; not correct Email";
+		errorBox.style.color = "red";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	} else {
+		errorBox.innerHTML = "&check;";
+		errorBox.style.color = "green";
+		email.style.borderColor = "green"
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	}
+})
+const confirmEmail = document.forms[0].confirmEmail;
+confirmEmail.addEventListener('keyup', function (params) {
+	const errorBox = params.target.nextElementSibling;
+	if (confirmEmail.value !== email.value) {
+		errorBox.innerHTML = "&cross; not the same email";
+		errorBox.style.color = "red";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	} else {
+		errorBox.innerHTML = "&check;";
+		errorBox.style.color = "green";
+		confirmEmail.style.borderColor = "green"
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	}
+})
+
+const password = document.forms[0].password;
+password.addEventListener('keyup', function (params) {
+	const track = params.target.value;
+	const errorBox = params.target.nextElementSibling;
+	if (track.length < 6 || track === "") {
+		errorBox.innerHTML = "&cross; empty or shorter than 6 letters";
+		errorBox.style.color = "red";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "block";
+		errorBox.style.margin = "-10px 0px -10px 0 ";
+	} else {
+		errorBox.innerHTML = "&check;";
+		errorBox.style.color = "green";
+		password.style.borderColor = "green"
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px -10px 0";
+	}
+})
+const confirmPassword = document.forms[0].confirmPassword;
+confirmPassword.addEventListener('keyup', function (params) {
+	const errorBox = params.target.nextElementSibling;
+	if (confirmPassword.value !== password.value || confirmPassword.value === '') {
+		errorBox.innerHTML = "&cross; not the same password";
+		errorBox.style.color = "red";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px 10px 0";
+	} else {
+		
+		errorBox.innerHTML = "&check;";
+		errorBox.style.color = "green";
+		errorBox.style.display = "block";
+		errorBox.style.margin = "-10px 0px 10px 0";
+		confirmPassword.style.borderColor = "green"
+	}
+	
+})
+
+const formSubmit = document.getElementById('formSubmit');
+formSubmit.addEventListener('click', function (event) {
+	event.preventDefault();
+
+});
+});
+/*========= Dropmenu ===========*/

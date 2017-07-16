@@ -48,10 +48,12 @@ nav .navba-brand{
   float: left;
   text-decoration: none;
   padding-top: 10px;
+  transition: all .8s ease-in-out;
 }
 
 nav .navba-brand:hover{
   color: #cc0000 ;
+  transform: scaleY(1.5)
 }
 nav .sub{
   list-style: none;
@@ -69,11 +71,14 @@ nav .sub li a{
   background: #cc0000 transparent;
   padding: 20px 10px;
   color: #fff;
+  transition: all .5s ease-in-out;
 }
 
 nav .sub li a:hover{
   background: #cc0000;
   color: #6ff700;
+  transform: scale(1.2)
+  
 }
  .sub .active{
   background: #cc0000;
@@ -95,6 +100,7 @@ h1, h2, .bran, .navba-brand{
 
 h2 span{
 	color: #00ffff;
+  transition: all .8s ease-in-out;
 }
 
 .welcoming h2 span:hover{
@@ -171,6 +177,7 @@ h2 span{
     padding: 15px 25px;
     border: 2px solid #3c589e;
     border-radius: 50%;
+    transition: all .8s ease-in-out ;
 }
 
 .media .face>a:hover{
@@ -187,6 +194,7 @@ h2 span{
     padding: 15px 20px;
     border: 2px solid #d72523;
     border-radius: 50%;
+    transition: all .8s ease-in-out ;
 }
 
 .media .yout>a:hover{
@@ -202,6 +210,7 @@ h2 span{
   padding: 15px 20px;
   border: 2px solid #32cdfd;
   border-radius: 50%;
+  transition: all .8s ease-in-out ;
 }
 
 .media .twit>a:hover{
@@ -217,6 +226,7 @@ h2 span{
   text-decoration: none;
   padding: 15px 18px;
   border-radius: 50%;
+  transition: all .8s ease-in-out ;
 }
 
 .media .goog>a:hover{
@@ -250,7 +260,8 @@ h2 span{
 
 .services h2 span:hover{
   color: #0ff;
-  border-bottom: none;;
+  border-bottom: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .services .box{
@@ -263,7 +274,8 @@ h2 span{
   font-size: 50px;
   border-radius: 60%;
   margin-bottom: 10px;
-  padding: 40px
+  padding: 40px;
+  transition: all 0.8s ease-in-out;
 }
 
 .box .design{
@@ -274,6 +286,7 @@ h2 span{
 .box .design:hover{
   color: #5FF122;
    border: 8px solid #B522F1;
+   transform: scale(1.2);
 }
 
 .box .develop{
@@ -284,6 +297,7 @@ h2 span{
 .box .develop:hover{
   color: #8BF8E7;
    border: 8px solid #5FF122;
+   transform: scale(1.2);
 }
 
 .box .graphic{
@@ -294,6 +308,7 @@ h2 span{
 .box .graphic:hover{
   color: #B522F1;
   border: 8px solid #fff;
+  transform: scale(1.2);
 }
 
 .services .box h3{
@@ -307,6 +322,7 @@ h2 span{
 
 .services .box h3 span{
   color: #cc0000;
+  transition: all 0.8s ease-in-out;
 }
 
 .services .box h3 span:hover{
@@ -330,6 +346,11 @@ h2 span{
   background: #417a32;
   min-height: 60px;
   border: 3px solid #375e2d;
+  transition: all .8s ease-in-out;
+}
+.contact >h1:hover{
+  background: #4bc62b;
+  color: #cc0000;
 }
 .input-feild{
   margin-bottom: 10px;
@@ -343,6 +364,13 @@ h2 span{
    background: transparent;
   border: 1px solid #cc0000;
   color: #fff;
+  transition: all .8s ease-in-out;
+}
+.input-feild input:hover,
+.contact form textarea:hover{
+  border: 1px solid blue;
+  opacity: .8;
+  transform: scale(1.05)
 }
 
 .form-control {
@@ -356,6 +384,7 @@ h2 span{
   background: transparent;
   border: 1px solid #cc0000;
   color: #fff;
+  transition: all .8s ease-in-out;
 }
 .contact form .btn{
   padding: 10px 30px
@@ -445,10 +474,20 @@ h2 span{
   width: 45%;
   margin: 30px auto 30px auto;
   border-radius: 10px;
+  transition: all 1s ease-in-out
+}
+.register:hover{
+  transform: scale(1.1);
 }
 .register .header{
   text-align: center;
   padding-bottom: 10px;
+  transition: all .5s ease-in-out;
+}
+.register .header:hover{
+  transform: scaleX(1.2);
+  transform: rotateY(1.5);
+  color: #00ffff;
 }
 .register form{
   margin-left: auto;
@@ -462,12 +501,23 @@ h2 span{
     border: 1px solid #cc0000;
     color: #000;
     margin-bottom: 15px;
+    transition: all 1s ease-in-out
 }
+  .register form input:hover{
+    transform: scale(1.2);
+  }
 .register form button{
   background: #cc0000;
     border: 2px solid #cc0000;
     border-radius: 5px;
     padding: 3px 5px;
+    transition: all .8s ease-in-out;
+}
+.register form button:hover{
+  background: #00ffff;
+  color: #cc0000;
+  transform: scale(1.2);
+  border: 2px solid #00ffff;
 }
 .register form a:last-child{
   text-decoration: none;
@@ -496,6 +546,7 @@ footer{
   background: #cc0000;
   color: #000;
   border: 1px solid #cc0000;
+  transition: all .8s ease-in-out;
 }
 /*======================= My Frame Work =======================*/
 .container{
@@ -540,17 +591,17 @@ nav .sub{
   padding-top: 8px;
   margin-top: 0;
   float: none;
-  display: none;
   top: 52px;
-  right: 0;
+  right: -1000px;
   bottom: 0;
   height: 100%;
   z-index: 900000;
   padding-left: 0px !important;
   text-align: center;
+  transition: all 2s;
 }
 .menu:hover .sub{
-  display: block;
+  right: 0;
 }
 nav .sub li{
   padding: 25px 0;
@@ -721,17 +772,17 @@ nav .sub{
   padding-top: 8px;
   margin-top: 0;
   float: none;
-  display: none;
   top: 52px;
-  right: 0;
+  right: -1000px;
   bottom: 0;
   height: 100%;
   z-index: 900000;
   padding-left: 0px !important;
   text-align: center;
+  transition: all 2s;
 }
 .menu:hover .sub{
-  display: block;
+  right: 0;
 }
 nav .sub li{
   padding: 25px 0;
@@ -882,17 +933,17 @@ nav .sub{
   padding-top: 8px;
   margin-top: 0;
   float: none;
-  display: none;
   top: 52px;
-  right: 0;
+  right: -1000px;
   bottom: 0;
   height: 100%;
   z-index: 900000;
   padding-left: 0px !important;
   text-align: center;
+  transition: all 2s;
 }
 .menu:hover .sub{
-  display: block;
+  right: 0;
 }
 nav .sub li{
   padding: 25px 0;
@@ -900,9 +951,6 @@ nav .sub li{
   background: #000;
   position: relative;
   display: block;
-}
-.sub li:hover{
-  background: #545b66;
 }
 nav .sub li a{
   text-decoration: none;
@@ -913,7 +961,6 @@ nav .sub li a{
   right: 0;
   top: 0;
   bottom: 0;
-  height: 100%;
   width: 100%;
 }
 nav .sub .active{
@@ -932,6 +979,7 @@ nav .sub .active:hover{
 	padding-left: 5;
 	padding-right: 5;
 }
+
 /*========= End Drop===========*/
 .welcoming p {
     padding: 20px 235px;
