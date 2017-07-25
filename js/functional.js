@@ -177,4 +177,7 @@ formSubmit.addEventListener('click', function (event) {
 
 });
 });
-/*========= Dropmenu ===========*/
+/*################ DropMenu #################*/
+const menu = document.getElementsByClassName('menu-icon');
+const links = document.getElementsByClassName('sub');
+menu[0].addEventListener('click', () => links[0].classList.toggle('marginLeft'));
