@@ -572,6 +572,7 @@ nav{
 nav .navba-brand{
   position: absolute;
   top: 0;
+  z-index: 11;
 }
 nav .menu-icon{
   position: absolute;
@@ -582,23 +583,31 @@ nav .menu-icon{
   color: #fff;
   font-size: 30px;
   background: #cc0000;
+  z-index: 11;
+}
+.nav-tem{
+    height: 62px;
+    background: #000;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
 nav .sub{
   width: 100%;
   padding-top: 8px;
-  margin-top: 56px;
-  margin-left: 2000px;
+  margin-top: -2000px;
+  margin-left: 0;
   float: none;
   height: 100%;
-  position: relative;
   z-index: 9;
+  position: absolute;
   padding-left: 0px !important;
   text-align: center;
   transition: all 1.5s;
 }
 nav .marginLeft{
-  margin-left: 0;
+  margin-top: 57px;
 }
 nav .sub li{
   padding: 0;
@@ -735,6 +744,7 @@ nav{
 nav .navba-brand{
   position: absolute;
   top: 0;
+  z-index: 11;
 }
 nav .menu-icon{
   position: absolute;
@@ -745,23 +755,31 @@ nav .menu-icon{
   color: #fff;
   font-size: 30px;
   background: #cc0000;
+  z-index: 11;
+}
+.nav-tem{
+    height: 62px;
+    background: #000;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
 nav .sub{
   width: 100%;
   padding-top: 8px;
-  margin-top: 56px;
-  margin-left: 2000px;
+  margin-top: -2000px;
+  margin-left: 0;
   float: none;
   height: 100%;
-  position: relative;
   z-index: 9;
+  position: absolute;
   padding-left: 0px !important;
   text-align: center;
   transition: all 1.5s;
 }
 nav .marginLeft{
-  margin-left: 0;
+  margin-top: 57px;
 }
 nav .sub li{
   padding: 0;
@@ -878,6 +896,7 @@ nav{
 nav .navba-brand{
   position: absolute;
   top: 0;
+  z-index: 11;
 }
 nav .menu-icon{
   position: absolute;
@@ -888,23 +907,31 @@ nav .menu-icon{
   color: #fff;
   font-size: 30px;
   background: #cc0000;
+  z-index: 11;
+}
+.nav-tem{
+    height: 62px;
+    background: #000;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
 nav .sub{
   width: 100%;
   padding-top: 8px;
-  margin-top: 56px;
-  margin-left: 2000px;
+  margin-top: -2000px;
+  margin-left: 0;
   float: none;
   height: 100%;
-  position: relative;
   z-index: 9;
+  position: absolute;
   padding-left: 0px !important;
   text-align: center;
   transition: all 1.5s;
 }
 nav .marginLeft{
-  margin-left: 0;
+  margin-top: 57px;
 }
 nav .sub li{
   padding: 0;
