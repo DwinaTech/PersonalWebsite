@@ -31,7 +31,7 @@ body{
 /*============= Start Header =========*/
 /*===================================*/
 nav{
-  min-height: 65px;
+  height: 65px;
   border-bottom: 3px solid #cc0000;
   margin-bottom: 0;
   background: #000;
@@ -370,7 +370,7 @@ h2 span{
 .contact form textarea:hover{
   border: 1px solid blue;
   opacity: .8;
-  transform: scale(1.05)
+  transform: scale(1.01)
 }
 
 .form-control {
@@ -568,7 +568,6 @@ footer{
 nav{
   font-size: 20px;
   text-transform: uppercase;
-  position: relative;
 }
 nav .navba-brand{
   position: absolute;
@@ -586,56 +585,39 @@ nav .menu-icon{
 }
 
 nav .sub{
-  position: absolute;
   width: 100%;
   padding-top: 8px;
-  margin-top: 0;
+  margin-top: 56px;
+  margin-left: 2000px;
   float: none;
-  top: 52px;
-  right: -1000px;
-  bottom: 0;
   height: 100%;
-  z-index: 900000;
+  position: relative;
+  z-index: 9;
   padding-left: 0px !important;
   text-align: center;
-  transition: all 2s;
+  transition: all 1.5s;
 }
-.menu:hover .sub{
-  right: 0;
+nav .marginLeft{
+  margin-left: 0;
 }
 nav .sub li{
-  padding: 25px 0;
+  padding: 0;
   border: 1px solid #414449;
-  background: #000;
-  position: relative;
   display: block;
 }
-.sub li:hover{
-  background: #545b66;
+nav .sub li:first-child{
+  padding: 0;
+  margin: 0;
+  border: 1px solid #414449;
 }
 nav .sub li a{
   text-decoration: none;
   padding: 10px 0;
   display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
   width: 100%;
-}
-nav .sub .active{
-  background: #cc0000;
-	border: none;
-	border: 3px solid #cc0000;
-  padding: 25px 0;
-}
-    
-nav .sub .active:hover{
-  background: #cc0000;
-	border: 3px solid #cc0000;
-}
+  background: rgba(213,21,178,.9);
+} 
+
 .container{
 	position: relative !important;
 	padding-left: 5;
@@ -749,7 +731,6 @@ nav .sub .active:hover{
 nav{
   font-size: 20px;
   text-transform: uppercase;
-  position: relative;
 }
 nav .navba-brand{
   position: absolute;
@@ -767,56 +748,39 @@ nav .menu-icon{
 }
 
 nav .sub{
-  position: absolute;
   width: 100%;
   padding-top: 8px;
-  margin-top: 0;
+  margin-top: 56px;
+  margin-left: 2000px;
   float: none;
-  top: 52px;
-  right: -1000px;
-  bottom: 0;
   height: 100%;
-  z-index: 900000;
+  position: relative;
+  z-index: 9;
   padding-left: 0px !important;
   text-align: center;
-  transition: all 2s;
+  transition: all 1.5s;
 }
-.menu:hover .sub{
-  right: 0;
+nav .marginLeft{
+  margin-left: 0;
 }
 nav .sub li{
-  padding: 25px 0;
+  padding: 0;
   border: 1px solid #414449;
-  background: #000;
-  position: relative;
   display: block;
 }
-.sub li:hover{
-  background: #545b66;
+nav .sub li:first-child{
+  padding: 0;
+  margin: 0;
+  border: 1px solid #414449;
 }
 nav .sub li a{
   text-decoration: none;
   padding: 10px 0;
   display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
   width: 100%;
-}
-nav .sub .active{
-  background: #cc0000;
-	border: none;
-	border: 3px solid #cc0000;
-  padding: 25px 0;
-}
-    
-nav .sub .active:hover{
-  background: #cc0000;
-	border: 3px solid #cc0000;
-}
+  background: rgba(213,21,178,.9);
+} 
+
 .container{
 	position: relative !important;
 	padding-left: 5;
@@ -910,7 +874,6 @@ nav .sub .active:hover{
 nav{
   font-size: 20px;
   text-transform: uppercase;
-  position: relative;
 }
 nav .navba-brand{
   position: absolute;
@@ -928,58 +891,44 @@ nav .menu-icon{
 }
 
 nav .sub{
-  position: absolute;
   width: 100%;
   padding-top: 8px;
-  margin-top: 0;
+  margin-top: 56px;
+  margin-left: 2000px;
   float: none;
-  top: 52px;
-  right: -1000px;
-  bottom: 0;
   height: 100%;
-  z-index: 900000;
+  position: relative;
+  z-index: 9;
   padding-left: 0px !important;
   text-align: center;
-  transition: all 2s;
+  transition: all 1.5s;
 }
-.menu:hover .sub{
-  right: 0;
+nav .marginLeft{
+  margin-left: 0;
 }
 nav .sub li{
-  padding: 25px 0;
+  padding: 0;
   border: 1px solid #414449;
-  background: #000;
-  position: relative;
   display: block;
+}
+nav .sub li:first-child{
+  padding: 0;
+  margin: 0;
+  border: 1px solid #414449;
 }
 nav .sub li a{
   text-decoration: none;
   padding: 10px 0;
   display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 100%;
-}
-nav .sub .active{
-  background: #cc0000;
-	border: none;
-	border: 3px solid #cc0000;
-  padding: 25px 0;
-}
-    
-nav .sub .active:hover{
-  background: #cc0000;
-	border: 3px solid #cc0000;
-}
+  background: rgba(213,21,178,.9);
+} 
+
 .container{
 	position: relative !important;
 	padding-left: 5;
 	padding-right: 5;
 }
-
 /*========= End Drop===========*/
 .welcoming p {
     padding: 20px 235px;
