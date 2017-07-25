@@ -389,6 +389,7 @@ h2 span{
 .contact form .btn{
   padding: 10px 30px
 }
+
 /*=====================================*/
 /*============= Start Aside =========*/
 /*===================================*/
@@ -424,8 +425,8 @@ h2 span{
   position: relative;
   color: #000;
   font-weight: bold;
-  height: 750px;
-  overflow: hidden;
+  min-height: 750px;
+  /*overflow: hidden;*/
 }
 .pra-button{
   padding: 15px;
@@ -457,13 +458,19 @@ h2 span{
 }
 .about .overlay{
     background: rgba(244, 245, 247,0.4);
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    min-height: 750px;
+}
+.aboutMoreInfor{
+  display: none;
+}
+.pra-button .aboutInfoShow{
+  display: block;
+  
 }
 /*=====================================*/
 /*======= Start registration =========*/
@@ -692,9 +699,6 @@ nav .sub li a{
 }
 .welcoming h2{
    padding-top: 20px
-}
-.about{
-  height: 540px;
 }
 .about-welcoming p {
     padding: 10px;

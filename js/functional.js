@@ -45,20 +45,11 @@ for (i in myInput) {
 /*==============================================//
 // ========== Start About me ================= //
 //=============================================*/
-window.addEventListener('load', function (event) {
-	event.preventDefault();
-	const moreInfo = document.querySelector('#aboutInfor');
-	const infoPragraph = document.querySelector('.aboutMoreInfor');
-	const about = document.querySelector('.about');
-	infoPragraph.style.display = 'none';
-	moreInfo.addEventListener('click', function () {
-		if (infoPragraph.style.display === 'none') {
-			infoPragraph.style.display = 'block';
-			about.style.height = '900px';
-		} else if (infoPragraph.style.display === 'block') {
-			infoPragraph.style.display = 'none';
-		}
-	});
+const moreInfo = document.getElementById('aboutInfor');
+const infoPragraph = document.getElementsByClassName('aboutMoreInfor');
+//const about = document.querySelector('.about');
+moreInfo.addEventListener('click', function () {
+	infoPragraph[0].classList.toggle('aboutInfoShow');
 });
 /*==============================================//
 // ========== Start Form Validation ========== //
